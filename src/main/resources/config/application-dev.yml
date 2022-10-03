@@ -36,12 +36,13 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/ua
-    username: ua
-    password:
+    url: jdbc:postgresql://localhost:5432/uaa
+    username: postgres
+    password: sasha
     hikari:
       poolName: Hikari
       auto-commit: false
+
   jpa:
     database-platform: io.github.jhipster.domain.util.FixedPostgreSQL95Dialect
     database: POSTGRESQL
@@ -131,8 +132,8 @@ uaa:
     access-token-validity-in-seconds: 300
     # Refresh Token is valid for 7 days
     refresh-token-validity-in-seconds-for-remember-me: 604800
-    client-id: web_app
-    secret: changeit
+    client-id: a
+    secret: a
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
